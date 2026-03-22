@@ -1,56 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VJ Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VJ Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #f5f7fa; color: #333; }
+
+    header {
+      background: #002b5c;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #003f88, #00509d);
+      color: white;
+      padding: 100px 40px;
+      text-align: center;
+    }
+
+    .hero h2 { font-size: 42px; margin-bottom: 20px; }
+
+    .btn {
+      background: #ff6b00;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .section { padding: 60px 40px; }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h1>Welcome to VJ Solutions</h1>
-            <p>Your success is our mission.</p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="card">
-                <h3>Consultancy</h3>
-                <p>Expert advice to help you thrive.</p>
-            </div>
-            <div class="card">
-                <h3>Training</h3>
-                <p>Skill development for professionals.</p>
-            </div>
-            <div class="card">
-                <h3>Placement</h3>
-                <p>Connecting talent with opportunities.</p>
-            </div>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are dedicated to providing top-notch solutions to our clients.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: info@vjsolutions.com</p>
-        </section>
-    </main>
-    <footer>
-        <p>Follow us on social media!</p>
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">LinkedIn</a>
-    </footer>
+
+<header>
+  <h1>VJ Solutions</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Jobs</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Your Partner in Talent & Technology</h2>
+  <p>Connecting skilled professionals with top companies.</p>
+  <button class="btn">Explore Jobs</button>
+</section>
+
+<section class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Recruitment</h3>
+      <p>Find the best talent faster.</p>
+    </div>
+    <div class="card">
+      <h3>IT Solutions</h3>
+      <p>Modern tech solutions for your business.</p>
+    </div>
+    <div class="card">
+      <h3>Staffing</h3>
+      <p>Flexible workforce solutions.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#eef2f7;">
+  <h2>Latest Jobs</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Software Engineer</h3>
+      <p>Location: Remote</p>
+    </div>
+    <div class="card">
+      <h3>Data Analyst</h3>
+      <p>Location: Hyderabad</p>
+    </div>
+    <div class="card">
+      <h3>Project Manager</h3>
+      <p>Location: Bangalore</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 VJ Solutions</p>
+</footer>
+
 </body>
 </html>
